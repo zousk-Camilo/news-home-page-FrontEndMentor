@@ -1,0 +1,75 @@
+@use "variables" as v;
+
+
+
+.header__container{
+    //border: 1px solid blue;
+    position: relative;
+    display: flex;
+    width: 1115px;
+    font-family: v.$Font;
+    font-size: 0.95em;
+    @media (max-width:1115px){
+        width: 340px;
+        margin-left: 18px;
+    
+    }
+    
+    
+    &-menu{
+        padding:30px 15px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-image__logo{
+        width: 45px;
+        height: 30px;
+        @media (max-width: 1115px){
+            width: 65px;
+            height: 40px;
+        }
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    
+    &-image__menu{
+        height: 20px;
+        width: 40px;
+        display: none;
+        &:hover{
+            cursor:pointer;
+        }
+        @media (max-width: 1115px){
+            display: flex;
+        }
+    }
+
+    &-navbar__menu{
+        
+        position: absolute;
+        top: 35px;
+        right: 5px;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        &-item{
+            list-style: none;
+        }
+        &-link{
+            text-decoration: none;
+            color: v.$Dark-grayish-blue;
+            &:hover{color: v.$Soft-red;}
+        }
+        
+        @media (max-width: 1115px){
+            display: none;             
+        }
+        
+    }
+    
+}
+

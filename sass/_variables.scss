@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "Inter Font";
+    src: local("Inter"), url("../assets/fonts/Inter-VariableFont_slnt\,wght.ttf") format("opentype"); 
+};
+@font-face {
+    font-family: "Inter Font Bold";
+    src: local("Inter Bold"), url("../assets/fonts/static/Inter-Bold.ttf") format("opentype"); 
+};
+@font-face {
+    font-family: "Inter Font Extra";
+    src: local("Inter Extra"), url("../assets/fonts/static/Inter-ExtraBold.ttf") format("opentype"); 
+};
+
+
+
+$Soft-orange: hsl(35, 77%, 62%);
+$Soft-red: hsl(5, 85%, 63%);
+$Off-white: hsl(36, 100%, 99%);
+$Grayish-blue: hsl(233, 8%, 79%);
+$Dark-grayish-blue: hsl(236, 13%, 42%);
+$Very-dark-blue: hsl(240, 100%, 5%);
+$Black-modal: hsl(0, 0%, 0%, .5);
+$Font: "Inter Font";
+$Inter-Bold: "inter Font Bold";
+$Inter-Extra: "Inter Font Extra";

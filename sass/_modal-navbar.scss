@@ -1,0 +1,47 @@
+@use "variables" as v;
+
+.modal-navbar{
+
+    
+    position: absolute;
+    display: none;
+    top: 20px;
+    right: 64px;
+    height: 100%;
+    width: 260px;
+
+    img{
+        position: absolute;
+        top:0;
+        right: 0;
+        &:hover{
+            cursor: pointer;
+            border: 1px solid v.$Soft-red;
+        }
+    }
+
+        &__menu{
+            list-style: none;
+            margin-top: 150px;
+            margin-left: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            a{
+                font-size: 1.2em;
+                text-decoration: none;
+                color: v.$Very-dark-blue;
+                font-family: v.$Font;
+                &:hover{
+                    color: v.$Soft-red;
+                }
+            }
+        }
+
+
+        &__background{
+            background-color: v.$Black-modal;
+            width: 400px;
+        }
+}

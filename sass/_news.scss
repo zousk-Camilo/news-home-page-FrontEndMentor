@@ -1,0 +1,93 @@
+@use "variables" as v;
+
+.news{
+    //border: 1px solid orange;
+    width: 350px;
+    height: 500px;
+    background: v.$Very-dark-blue;
+    @media (max-width:1115px){
+        margin-top: 30px;
+        margin-left: 15px;
+    }
+        
+   
+
+    &__description{
+        margin: 40px 30px;
+        font-family: v.$Inter-Bold;
+        font-size: 1.9em;
+        color: v.$Soft-orange;
+        background: v.$Very-dark-blue;
+    }
+
+    &__first-issue{
+        margin: 0 30px;
+        font-family: v.$Font; 
+        background-color: v.$Very-dark-blue;
+        border-bottom: 0.1px solid v.$Grayish-blue;
+        padding-bottom: 35px;
+    }
+
+    &__description-1{
+        background-color: v.$Very-dark-blue;
+        color: v.$Off-white;
+        &:hover{
+            cursor: pointer;
+            color: v.$Soft-orange;
+        }
+    }
+
+    &__details-1{
+        background-color: v.$Very-dark-blue;
+        color: v.$Grayish-blue;
+        margin-top: 20px;
+        font-size: 0.90em;
+    }
+
+
+    &__second-issue{
+        background-color: v.$Very-dark-blue;
+        font-family: v.$Font;
+        margin: 35px 30px;
+        border-bottom: 0.1px solid v.$Grayish-blue;
+        padding-bottom: 35px;
+    }
+
+    &__description-2{
+        background-color: v.$Very-dark-blue;
+        color: v.$Off-white;
+        &:hover{
+            cursor: pointer;
+            color: v.$Soft-orange;
+        }       
+    }
+
+    &__details-2{
+        background-color: v.$Very-dark-blue;
+        color: v.$Grayish-blue;
+        margin-top: 10px;
+        font-size: 0.90em;
+    }
+    &__third-issue{
+        background-color: v.$Very-dark-blue;
+        font-family: v.$Font;
+        margin: 35px 30px;
+    }
+
+    &__description-3{
+        background-color: v.$Very-dark-blue;
+        color: v.$Off-white;
+        &:hover{
+            cursor: pointer;
+            color: v.$Soft-orange;
+        }       
+    }
+
+    &__details-3{
+        background-color: v.$Very-dark-blue;
+        color: v.$Grayish-blue;
+        margin-top: 10px;
+        font-size: 0.90em;
+    }
+    
+}

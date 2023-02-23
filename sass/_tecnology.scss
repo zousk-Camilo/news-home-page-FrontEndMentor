@@ -1,0 +1,168 @@
+@use "variables" as v;
+
+
+.tecnology-review{
+    //border: 1px solid aqua;
+    display: flex;
+    align-items: center;
+    //height: 130px;
+    margin-top: 70px;
+
+    @media (max-width:1115px){
+        flex-direction: column;
+        gap: 35px;
+        margin-bottom: 40px;
+    }
+    
+
+
+    &__PCs-container{
+        display: flex;
+        gap: 25px;
+        
+    }
+
+    &__details-wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 205px;
+    }
+
+    &__image-PCs{
+        width: 100px;
+        height: 130px;
+    }
+
+    &__PCs-number{
+        font-family: v.$Font;
+        color: v.$Grayish-blue;
+        font-weight: 700;
+        font-size: 2em;
+    }
+
+    &__PCs-description{
+        font-family: v.$Inter-Extra;
+        font-weight: 700;
+        color: v.$Very-dark-blue;
+        font-size: 1.1em;
+        margin-top: 15px;
+        &:hover{
+            cursor: pointer;
+            color: v.$Soft-red;
+        }
+    }
+
+    &__PCs-details{
+        font-family: v.$Font;
+        color: v.$Dark-grayish-blue;
+        font-size: 0.90em;
+        margin-top: 15px;
+
+    }
+
+
+
+
+    ///laptops
+    
+    &__laptops-container{
+        display: flex;
+        gap: 25px;
+        margin-left: 50px;
+        @media (max-width:1115px){
+            margin-left: 0;
+        }
+        
+    }
+
+    &__details-wrapper2{
+        display: flex;
+        flex-direction: column;
+        width: 205px;
+    }
+
+    &__image-laptops{
+        width: 100px;
+        height: 130px;
+    }
+
+    &__laptops-number{
+        font-family: v.$Font;
+        color: v.$Grayish-blue;
+        font-weight: 700;
+        font-size: 2em;
+    }
+
+    &__laptops-description{
+        font-family: v.$Inter-Extra;
+        font-weight: 700;
+        color: v.$Very-dark-blue;
+        font-size: 1.1em;
+        margin-top: 15px;
+        &:hover{
+            cursor: pointer;
+            color: v.$Soft-red;
+        }
+    }
+
+    &__laptops-details{
+        font-family: v.$Font;
+        color: v.$Dark-grayish-blue;
+        font-size: 0.90em;
+        margin-top: 15px;
+
+
+}
+
+
+
+//gamiing
+
+
+&__gaming-container{
+    display: flex;
+    gap: 25px;
+    margin-left: 50px;
+    @media (max-width:1115px){
+        margin-left: 0;
+    }
+}
+
+&__details-wrapper3{
+    display: flex;
+    flex-direction: column;
+    width: 205px;
+}
+
+&__image-gaming{
+    width: 100px;
+    height: 130px;
+}
+
+&__gaming-number{
+    font-family: v.$Font;
+    color: v.$Grayish-blue;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+&__gaming-description{
+    font-family: v.$Inter-Extra;
+    font-weight: 700;
+    color: v.$Very-dark-blue;
+    font-size: 1.1em;
+    margin-top: 15px;
+    &:hover{
+        cursor: pointer;
+        color: v.$Soft-red;
+    }
+}
+
+&__gaming-details{
+    font-family: v.$Font;
+    color: v.$Dark-grayish-blue;
+    font-size: 0.90em;
+    margin-top: 15px;
+
+}
+}

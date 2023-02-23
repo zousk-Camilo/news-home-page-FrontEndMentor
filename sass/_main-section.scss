@@ -1,0 +1,114 @@
+@use "variables" as v;
+
+
+.main-section{
+    display: grid;
+    align-items: center;
+
+    &__details-container{
+        width: 730px;
+        display: flex;
+        gap: 90px;
+
+        @media (max-width: 1115px){
+            flex-direction: column;
+            gap: 0;
+            margin-left: 15px;
+        }
+    }
+
+    &__image-mobile{
+        width: 350px;
+        height: 300px;
+        display: none;
+        @media (max-width: 1115px){
+            display: block;
+        }
+    }
+
+
+    &__image-container{
+        margin-top: 0px;
+        margin-left: 0px;
+        width: 730px;
+        height: 300px;
+        //border: 1px solid red;
+        @media (max-width:1115px){
+            margin-top: 0;
+            margin-left: 15px;
+            width: 350px;
+            height: 300px;
+        }
+    }
+    &__image-desktop{
+        width: 730px;
+        height: 300px;
+        @media (max-width: 1115px){
+            display: none;
+        }  
+    }
+
+    &__paragraph-button{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 38px;
+        width: 340px;
+
+        @media (max-width:1115px){
+           
+        }
+
+    }
+
+
+    &__h2{
+        width: 290px;
+        height: 190px;
+        font-family:v.$Inter-Extra ;
+        font-weight: 700;
+        font-size: 3.5em;
+        line-height: 1;
+        letter-spacing: 0;
+        margin-top: 40px;
+
+        @media (max-width:1115px){
+            margin-top: 25px;
+            width:340px;
+            height: 125px;
+            font-size: 3em
+        }
+    }
+
+    &__description{
+        font-family: v.$Font;
+        font-size: 0.95em;
+        color: v.$Dark-grayish-blue;
+
+        @media (max-width:1115px){
+
+        }
+    }
+
+    &__button{
+        font-family: v.$Font;
+        font-weight: 700;
+        height: 50px;
+        width: 190px;
+        outline: none;
+        border: none;
+        background-color: v.$Soft-red;
+        color: v.$Off-white;
+        margin-top: 40px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        &:hover{
+            cursor: pointer;
+            background-color: v.$Very-dark-blue;
+        }
+
+        @media (max-width:1115px){
+            margin-top: 30px;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+
+
+.news-main__container{
+     display: flex;
+     gap: 22px;
+
+     @media (max-width: 1115px){
+        flex-direction: column;
+     }
+}

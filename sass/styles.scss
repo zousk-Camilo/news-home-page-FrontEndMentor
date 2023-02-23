@@ -1,0 +1,39 @@
+@use "variables" as v;
+@use "header";
+@use "news-main__container";
+@use "main-section";
+@use "news";
+@use "tecnology";
+@use "modal-navbar";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: v.$Off-white;
+}
+
+body{
+    position: relative;
+}
+
+.main__container{
+    //border: 1px solid red;
+    width: 1115px;
+    margin: auto;
+    @media (max-width: 1115px){
+        width: 375px;
+    }
+}
+
+
+.attribution { 
+    font-size: 18px; 
+    text-align: center; 
+    margin-top: 20px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}

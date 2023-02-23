@@ -1,0 +1,478 @@
+@font-face {
+  font-family: "Inter Font";
+  src: local("Inter"), url("../assets/fonts/Inter-VariableFont_slnt,wght.ttf") format("opentype");
+}
+@font-face {
+  font-family: "Inter Font Bold";
+  src: local("Inter Bold"), url("../assets/fonts/static/Inter-Bold.ttf") format("opentype");
+}
+@font-face {
+  font-family: "Inter Font Extra";
+  src: local("Inter Extra"), url("../assets/fonts/static/Inter-ExtraBold.ttf") format("opentype");
+}
+.header__container {
+  position: relative;
+  display: flex;
+  width: 1115px;
+  font-family: "Inter Font";
+  font-size: 0.95em;
+}
+@media (max-width: 1115px) {
+  .header__container {
+    width: 340px;
+    margin-left: 18px;
+  }
+}
+.header__container-menu {
+  padding: 30px 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__container-image__logo {
+  width: 45px;
+  height: 30px;
+}
+@media (max-width: 1115px) {
+  .header__container-image__logo {
+    width: 65px;
+    height: 40px;
+  }
+}
+.header__container-image__logo:hover {
+  cursor: pointer;
+}
+.header__container-image__menu {
+  height: 20px;
+  width: 40px;
+  display: none;
+}
+.header__container-image__menu:hover {
+  cursor: pointer;
+}
+@media (max-width: 1115px) {
+  .header__container-image__menu {
+    display: flex;
+  }
+}
+.header__container-navbar__menu {
+  position: absolute;
+  top: 35px;
+  right: 5px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.header__container-navbar__menu-item {
+  list-style: none;
+}
+.header__container-navbar__menu-link {
+  text-decoration: none;
+  color: hsl(236deg, 13%, 42%);
+}
+.header__container-navbar__menu-link:hover {
+  color: hsl(5deg, 85%, 63%);
+}
+@media (max-width: 1115px) {
+  .header__container-navbar__menu {
+    display: none;
+  }
+}
+
+.news-main__container {
+  display: flex;
+  gap: 22px;
+}
+@media (max-width: 1115px) {
+  .news-main__container {
+    flex-direction: column;
+  }
+}
+
+.main-section {
+  display: grid;
+  align-items: center;
+}
+.main-section__details-container {
+  width: 730px;
+  display: flex;
+  gap: 90px;
+}
+@media (max-width: 1115px) {
+  .main-section__details-container {
+    flex-direction: column;
+    gap: 0;
+    margin-left: 15px;
+  }
+}
+.main-section__image-mobile {
+  width: 350px;
+  height: 300px;
+  display: none;
+}
+@media (max-width: 1115px) {
+  .main-section__image-mobile {
+    display: block;
+  }
+}
+.main-section__image-container {
+  margin-top: 0px;
+  margin-left: 0px;
+  width: 730px;
+  height: 300px;
+}
+@media (max-width: 1115px) {
+  .main-section__image-container {
+    margin-top: 0;
+    margin-left: 15px;
+    width: 350px;
+    height: 300px;
+  }
+}
+.main-section__image-desktop {
+  width: 730px;
+  height: 300px;
+}
+@media (max-width: 1115px) {
+  .main-section__image-desktop {
+    display: none;
+  }
+}
+.main-section__paragraph-button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 38px;
+  width: 340px;
+}
+.main-section__h2 {
+  width: 290px;
+  height: 190px;
+  font-family: "Inter Font Extra";
+  font-weight: 700;
+  font-size: 3.5em;
+  line-height: 1;
+  letter-spacing: 0;
+  margin-top: 40px;
+}
+@media (max-width: 1115px) {
+  .main-section__h2 {
+    margin-top: 25px;
+    width: 340px;
+    height: 125px;
+    font-size: 3em;
+  }
+}
+.main-section__description {
+  font-family: "Inter Font";
+  font-size: 0.95em;
+  color: hsl(236deg, 13%, 42%);
+}
+.main-section__button {
+  font-family: "Inter Font";
+  font-weight: 700;
+  height: 50px;
+  width: 190px;
+  outline: none;
+  border: none;
+  background-color: hsl(5deg, 85%, 63%);
+  color: hsl(36deg, 100%, 99%);
+  margin-top: 40px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.main-section__button:hover {
+  cursor: pointer;
+  background-color: hsl(240deg, 100%, 5%);
+}
+@media (max-width: 1115px) {
+  .main-section__button {
+    margin-top: 30px;
+  }
+}
+
+.news {
+  width: 350px;
+  height: 500px;
+  background: hsl(240deg, 100%, 5%);
+}
+@media (max-width: 1115px) {
+  .news {
+    margin-top: 30px;
+    margin-left: 15px;
+  }
+}
+.news__description {
+  margin: 40px 30px;
+  font-family: "inter Font Bold";
+  font-size: 1.9em;
+  color: hsl(35deg, 77%, 62%);
+  background: hsl(240deg, 100%, 5%);
+}
+.news__first-issue {
+  margin: 0 30px;
+  font-family: "Inter Font";
+  background-color: hsl(240deg, 100%, 5%);
+  border-bottom: 0.1px solid hsl(233deg, 8%, 79%);
+  padding-bottom: 35px;
+}
+.news__description-1 {
+  background-color: hsl(240deg, 100%, 5%);
+  color: hsl(36deg, 100%, 99%);
+}
+.news__description-1:hover {
+  cursor: pointer;
+  color: hsl(35deg, 77%, 62%);
+}
+.news__details-1 {
+  background-color: hsl(240deg, 100%, 5%);
+  color: hsl(233deg, 8%, 79%);
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+.news__second-issue {
+  background-color: hsl(240deg, 100%, 5%);
+  font-family: "Inter Font";
+  margin: 35px 30px;
+  border-bottom: 0.1px solid hsl(233deg, 8%, 79%);
+  padding-bottom: 35px;
+}
+.news__description-2 {
+  background-color: hsl(240deg, 100%, 5%);
+  color: hsl(36deg, 100%, 99%);
+}
+.news__description-2:hover {
+  cursor: pointer;
+  color: hsl(35deg, 77%, 62%);
+}
+.news__details-2 {
+  background-color: hsl(240deg, 100%, 5%);
+  color: hsl(233deg, 8%, 79%);
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+.news__third-issue {
+  background-color: hsl(240deg, 100%, 5%);
+  font-family: "Inter Font";
+  margin: 35px 30px;
+}
+.news__description-3 {
+  background-color: hsl(240deg, 100%, 5%);
+  color: hsl(36deg, 100%, 99%);
+}
+.news__description-3:hover {
+  cursor: pointer;
+  color: hsl(35deg, 77%, 62%);
+}
+.news__details-3 {
+  background-color: hsl(240deg, 100%, 5%);
+  color: hsl(233deg, 8%, 79%);
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.tecnology-review {
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+}
+@media (max-width: 1115px) {
+  .tecnology-review {
+    flex-direction: column;
+    gap: 35px;
+    margin-bottom: 40px;
+  }
+}
+.tecnology-review__PCs-container {
+  display: flex;
+  gap: 25px;
+}
+.tecnology-review__details-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 205px;
+}
+.tecnology-review__image-PCs {
+  width: 100px;
+  height: 130px;
+}
+.tecnology-review__PCs-number {
+  font-family: "Inter Font";
+  color: hsl(233deg, 8%, 79%);
+  font-weight: 700;
+  font-size: 2em;
+}
+.tecnology-review__PCs-description {
+  font-family: "Inter Font Extra";
+  font-weight: 700;
+  color: hsl(240deg, 100%, 5%);
+  font-size: 1.1em;
+  margin-top: 15px;
+}
+.tecnology-review__PCs-description:hover {
+  cursor: pointer;
+  color: hsl(5deg, 85%, 63%);
+}
+.tecnology-review__PCs-details {
+  font-family: "Inter Font";
+  color: hsl(236deg, 13%, 42%);
+  font-size: 0.9em;
+  margin-top: 15px;
+}
+.tecnology-review__laptops-container {
+  display: flex;
+  gap: 25px;
+  margin-left: 50px;
+}
+@media (max-width: 1115px) {
+  .tecnology-review__laptops-container {
+    margin-left: 0;
+  }
+}
+.tecnology-review__details-wrapper2 {
+  display: flex;
+  flex-direction: column;
+  width: 205px;
+}
+.tecnology-review__image-laptops {
+  width: 100px;
+  height: 130px;
+}
+.tecnology-review__laptops-number {
+  font-family: "Inter Font";
+  color: hsl(233deg, 8%, 79%);
+  font-weight: 700;
+  font-size: 2em;
+}
+.tecnology-review__laptops-description {
+  font-family: "Inter Font Extra";
+  font-weight: 700;
+  color: hsl(240deg, 100%, 5%);
+  font-size: 1.1em;
+  margin-top: 15px;
+}
+.tecnology-review__laptops-description:hover {
+  cursor: pointer;
+  color: hsl(5deg, 85%, 63%);
+}
+.tecnology-review__laptops-details {
+  font-family: "Inter Font";
+  color: hsl(236deg, 13%, 42%);
+  font-size: 0.9em;
+  margin-top: 15px;
+}
+.tecnology-review__gaming-container {
+  display: flex;
+  gap: 25px;
+  margin-left: 50px;
+}
+@media (max-width: 1115px) {
+  .tecnology-review__gaming-container {
+    margin-left: 0;
+  }
+}
+.tecnology-review__details-wrapper3 {
+  display: flex;
+  flex-direction: column;
+  width: 205px;
+}
+.tecnology-review__image-gaming {
+  width: 100px;
+  height: 130px;
+}
+.tecnology-review__gaming-number {
+  font-family: "Inter Font";
+  color: hsl(233deg, 8%, 79%);
+  font-weight: 700;
+  font-size: 2em;
+}
+.tecnology-review__gaming-description {
+  font-family: "Inter Font Extra";
+  font-weight: 700;
+  color: hsl(240deg, 100%, 5%);
+  font-size: 1.1em;
+  margin-top: 15px;
+}
+.tecnology-review__gaming-description:hover {
+  cursor: pointer;
+  color: hsl(5deg, 85%, 63%);
+}
+.tecnology-review__gaming-details {
+  font-family: "Inter Font";
+  color: hsl(236deg, 13%, 42%);
+  font-size: 0.9em;
+  margin-top: 15px;
+}
+
+.modal-navbar {
+  position: absolute;
+  display: none;
+  top: 20px;
+  right: 64px;
+  height: 100%;
+  width: 260px;
+}
+.modal-navbar img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.modal-navbar img:hover {
+  cursor: pointer;
+  border: 1px solid hsl(5deg, 85%, 63%);
+}
+.modal-navbar__menu {
+  list-style: none;
+  margin-top: 150px;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.modal-navbar__menu a {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: hsl(240deg, 100%, 5%);
+  font-family: "Inter Font";
+}
+.modal-navbar__menu a:hover {
+  color: hsl(5deg, 85%, 63%);
+}
+.modal-navbar__background {
+  background-color: hsla(0deg, 0%, 0%, 0.5);
+  width: 400px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: hsl(36deg, 100%, 99%);
+}
+
+body {
+  position: relative;
+}
+
+.main__container {
+  width: 1115px;
+  margin: auto;
+}
+@media (max-width: 1115px) {
+  .main__container {
+    width: 375px;
+  }
+}
+
+.attribution {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+/*# sourceMappingURL=main.css.map */
